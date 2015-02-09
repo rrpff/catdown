@@ -1,0 +1,25 @@
+{
+  "name": "catdown",
+  "version": "0.0.0",
+  "description": "Hackable Markdown editor in vanilla JS.",
+  "main": "index.js",
+  "keywords": [
+    "markdown",
+    "md",
+    "editor",
+    "preview",
+    "typecat"
+  ],
+  "author": "zuren",
+  "license": "MIT",
+  "dependencies": {
+    "codemirror": "^4.12.0",
+    "marked": "^0.3.3"
+  },
+  "devDependencies": {
+    "event-stream": "^3.2.2",
+    "gulp": "^3.8.10",
+    "gulp-concat": "^2.4.3",
+    "gulp-stylus": "^2.0.0"
+  }
+}
