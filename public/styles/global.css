@@ -1,39 +1,3 @@
-body {
-  font-family: "Raleway", sans-serif;
-}
-.block {
-  padding: 60px 0;
-}
-#block-intro {
-  padding-top: 10%;
-  text-align: center;
-}
-#block-usage {
-  background: #fff;
-}
-#block-plugins {
-  background: #fff;
-}
-#block-examples {
-  background: #fff;
-}
-.catdown-example {
-  outline: 1px solid rgba(0,0,0,0.1);
-  margin-bottom: 40px;
-}
-.CodeMirror,
-#md-preview {
-  width: 50%;
-  max-width: 50%;
-  height: 300px;
-  max-height: 300px;
-  overflow-y: auto;
-  display: inline-block;
-  float: left;
-  background: #fff;
-  text-align: left;
-}
-
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 /**
@@ -461,6 +425,35 @@ td,
 th {
   padding: 0;
 }
+body {
+  font-family: "Raleway", sans-serif;
+}
+.block {
+  padding: 60px 0;
+}
+#block-intro {
+  padding-top: 10%;
+  text-align: center;
+}
+#block-usage {
+  background: #fff;
+}
+#block-plugins {
+  background: #fff;
+}
+#block-examples {
+  background: #fff;
+}
+.catdown-demo {
+  outline: 1px solid #1eaedb;
+  margin-bottom: 40px;
+}
+.cm-s-catdown {
+  height: 300px;
+  max-height: 300px;
+  text-align: left;
+}
+
 /*
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache
@@ -942,7 +935,7 @@ there.
 .cm-s-catdown .cm-header {
   color: #000;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.3em;
   line-height: 2.4em;
 }
 .cm-s-catdown .cm-header.cm-comment {

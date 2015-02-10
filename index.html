@@ -16,43 +16,14 @@
     <div class="block" id="block-intro">
         <div class="container">
             <div class="row">
-                <h1>Catdown</h1>
-                <h4>A fast, hackable Markdown editor for the web.</h4>
+                <header id="html-preview">
+                    <h1>Catdown</h1>
+                    <h4>A fast, hackable Markdown editor for the web.</h4>
+                </header>
 
-                <section class="row catdown-example">
-                    <textarea id="md-editor">Catdown is a Markdown editor for the web. It's designed to be simple to install, configure, extend and use.
-
-Built on the excellent [CodeMirror](http://codemirror.net) and not dependent on jQuery.
-
-### Installation
-
-Install it with `npm`.
-
-```bash
-$ npm install --save catdown
-```
-
-`require` it in your code.
-
-```js
-// Import Catdown
-var Catdown = require("catdown");
-
-// Create an editor
-var editor = new Catdown({
-    textarea: document.getElementById("md-editor"),
-    preview: document.getElementById("md-preview")
-});
-```
-
-And `<link>` the stylesheet.
-
-```html
-<link rel="stylesheet" href="node_modules/catdown/styles/dist/catdown.css">
-```
-
-**You're done!**</textarea>
-                    <section id="md-preview"></section>
+                <section class="row catdown-demo">
+                    <textarea id="catdown-editor"># Catdown
+#### A fast, hackable Markdown editor for the web.</textarea>
                 </section>
 
                 <pre><code>$ npm install --save catdown</code></pre>

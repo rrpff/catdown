@@ -11028,8 +11028,8 @@ if (typeof module !== 'undefined' && typeof exports === 'object') {
 var Catdown = require("catdown");
 
 var editor = new Catdown({
-    textarea: document.getElementById("md-editor"),
-    preview: document.getElementById("md-preview"),
+    textarea: document.getElementById("catdown-editor"),
+    preview: document.getElementById("html-preview"),
     plugins: [
         require("catdown-scrollsync")
     ]
