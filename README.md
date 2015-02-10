@@ -1,6 +1,6 @@
 # Catdown
 
-## A sane and pluggable Markdown editor.
+## A fast and hackable Markdown editor in vanilla JS.
 
 Catdown is a Markdown editor for the web. It's designed to be simple to install, configure, extend and use.
 
