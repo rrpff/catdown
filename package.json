@@ -22,5 +22,13 @@
     "gulp-concat": "^2.4.3",
     "gulp-stylus": "^2.0.0"
   },
-  "author": "Richard Foster <richard@rpf.me> (http://rpf.me/)"
+  "author": "Richard Foster <richard@rpf.me> (http://rpf.me/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zuren/catdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zuren/catdown/issues"
+  },
+  "homepage": "https://github.com/zuren/catdown"
 }
