@@ -26,7 +26,8 @@ var Catdown = function(opts){
 
     // Import the core plugins, passing along the options hash.
     // This is where most of the functionality is.
-    this.use(require("../catdown-core/"), opts);
+    // Contans events, rendering, key binding and associated methods.
+    this.use(require("catdown-core"), opts);
 
     // Set initial value
     if(opts.value) this.set(opts.value);

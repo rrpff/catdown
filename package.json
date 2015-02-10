@@ -1,18 +1,18 @@
 {
   "name": "catdown",
-  "version": "0.0.0",
-  "description": "Hackable Markdown editor in vanilla JS.",
+  "version": "1.0.0",
+  "description": "Fast and hackable Markdown editor in vanilla JS.",
   "main": "index.js",
   "keywords": [
     "markdown",
     "md",
     "editor",
-    "preview",
-    "typecat"
+    "codemirror",
+    "preview"
   ],
-  "author": "zuren",
   "license": "MIT",
   "dependencies": {
+    "catdown-core": "^1.0.3",
     "codemirror": "^4.12.0",
     "marked": "^0.3.3"
   },
@@ -21,5 +21,6 @@
     "gulp": "^3.8.10",
     "gulp-concat": "^2.4.3",
     "gulp-stylus": "^2.0.0"
-  }
+  },
+  "author": "Richard Foster <richard@rpf.me> (http://rpf.me/)"
 }

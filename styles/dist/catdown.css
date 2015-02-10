@@ -1,3 +1,109 @@
+.cm-s-catdown div.CodeMirror-cursor {
+  z-index: 20;
+}
+.cm-s-catdown .cm-atom {
+  color: #219;
+}
+.cm-s-catdown .cm-number {
+  color: #164;
+}
+.cm-s-catdown .cm-property {
+  color: #000;
+}
+.cm-s-catdown .cm-operator {
+  color: #000;
+}
+.cm-s-catdown .cm-meta {
+  color: #555;
+}
+.cm-s-catdown .cm-error {
+  color: #f00;
+}
+.cm-s-catdown .cm-qualifier {
+  color: #555;
+}
+.cm-s-catdown .cm-builtin {
+  color: #30a;
+}
+.cm-s-catdown .cm-bracket {
+  color: #997;
+}
+.cm-s-catdown .cm-tag {
+  color: #170;
+}
+.cm-s-catdown .cm-attribute {
+  color: #00c;
+}
+.cm-s-catdown .cm-comment {
+  color: #df5000;
+}
+.cm-s-catdown .cm-keyword {
+  color: #a71d5d;
+}
+.cm-s-catdown .cm-def {
+  color: #0086b3;
+}
+.cm-s-catdown .cm-variable {
+  color: #000;
+}
+.cm-s-catdown .cm-variable-2 {
+  color: #05a;
+}
+.cm-s-catdown .cm-variable-3 {
+  color: #085;
+}
+.cm-s-catdown .cm-string {
+  color: #df5000;
+}
+.cm-s-catdown .cm-string-2 {
+  color: #f50;
+}
+.cm-s-catdown .cm-header {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 2.4em;
+}
+.cm-s-catdown .cm-header.cm-comment {
+  color: #df5000;
+}
+.cm-s-catdown .cm-quote {
+  color: #000;
+  background: #eee;
+  font-weight: bold;
+}
+.cm-s-catdown .cm-hr {
+  color: #999;
+}
+.cm-s-catdown .cm-link {
+  color: #22a7f0;
+  font-weight: bold;
+}
+.cm-negative {
+  color: #d44;
+}
+.cm-positive {
+  color: #292;
+}
+.cm-strong {
+  color: #000;
+  font-weight: bold;
+}
+.cm-em {
+  font-style: italic;
+}
+.cm-emstrong {
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+.cm-link {
+  text-decoration: underline;
+}
+.cm-invalidchar {
+  color: #f00;
+}
+
 /* BASICS */
 
 .CodeMirror {

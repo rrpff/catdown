@@ -7,7 +7,7 @@ var gulp = require("gulp"),
 // Define all task paths
 var tasks = {
 	styles: {
-		src: ["./styles/src/codemirror.catdown.styl", "./styles/src/codemirror.default.styl"],
+		src: ["./styles/src/catdown.styl"],
 		dest: "./styles/dist/",
 		concat: "./styles/src/codemirror.css"
 	}
@@ -24,16 +24,14 @@ gulp.task("watch", ["default"], function(){
 
 // Compile Stylus files and concat each to codemirror basic styles
 gulp.task("styles", function(){
-	for(var i = 0; i < tasks.styles.src.length; i++){
-		// Create and merge streams
-		var file = tasks.styles.src[i],
-			css = gulp.src(tasks.styles.concat),
-			styl = gulp.src(file).pipe(stylus()),
-			merged = es.merge(css, styl),
-			fpath = Path.basename(file, ".styl") + ".css";
+	// Create and merge streams
+	var file = tasks.styles.src,
+		styl = gulp.src(file).pipe(stylus()),
+		css = gulp.src(tasks.styles.concat),
+		merged = es.merge(css, styl),
+		fpath = Path.basename(file, ".styl") + ".css";
 
-		// Concatenate and save
-		merged.pipe(concat(fpath))
-			.pipe(gulp.dest(tasks.styles.dest));
-	}
+	// Concatenate and save
+	merged.pipe(concat(fpath))
+		.pipe(gulp.dest(tasks.styles.dest));
 });
