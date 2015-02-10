@@ -11034,4 +11034,6 @@ var editor = new Catdown({
         require("catdown-scrollsync")
     ]
 });
+
+editor.focus(true);
 },{"catdown":2,"catdown-scrollsync":1}]},{},[17])

@@ -7,3 +7,5 @@ var editor = new Catdown({
         require("catdown-scrollsync")
     ]
 });
+
+editor.focus(true);
