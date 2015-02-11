@@ -71,6 +71,14 @@ var editor = new Catdown({
 });
 ```
 
+#### If you want to get really simple...
+
+```js
+var Catdown = require("catdown");
+var editor = new Catdown();
+document.body.appendChild(editor.$editor);
+```
+
 ### API
 
 In the following, assume `editor` is an instance of Catdown.
@@ -184,7 +192,7 @@ var editor = new Catdown({
         	handler: require("catdown-wordcount"),
             options: {}
         },
-        
+
     	// Just as a function, if you have no options.
     	require("catdown-hash")
     ]
@@ -230,10 +238,10 @@ Your plugin will be called with the following arguments:
 A completely useless plugin might look like this:
 
 ```js
-var jumpingPlugin = module.exports = function(options, editor, helpers){	
+var jumpingPlugin = module.exports = function(options, editor, helpers){
 	// Plugins are called with the Catdown instance as context.
 	// this instanceof Catdown === true
-	
+
 	// Add a controller to the instance.
 	this.jump = function(num){
 		// Trigger an event with some arguments.
