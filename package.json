@@ -1,6 +1,6 @@
 {
   "name": "catdown",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A fast and hackable Markdown editor in vanilla JS.",
   "main": "index.js",
   "keywords": [
