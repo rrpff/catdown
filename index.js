@@ -6,8 +6,13 @@ var utils = require("./lib/utils.js"),
 
 // Constructor
 var Catdown = function(opts){
-    // Pull textarea from opts. Unwrap if it's a jQuery object.
-    this.$textarea = utils.unwrapElement(opts.textarea || document.createElement("textarea"));
+    opts = opts || {};
+
+    // Pull textarea from opts or create and append a new one.
+    // "Unwrap" in case a jQuery (or any $ style) object is provided.
+    this.$textarea = opts.textarea !== null
+        ? utils.unwrapElement(opts.textarea)
+        : document.body.appendChild(document.createElement("textarea"));
 
     // Create a CodeMirror instance from $textarea
     this.editor = CodeMirror.fromTextArea(this.$textarea, {
