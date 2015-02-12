@@ -18,7 +18,8 @@ var Catdown = function(opts){
     this.editor = CodeMirror.fromTextArea(this.$textarea, {
         mode: "gfm", // Use Github flavoured Markdown
         lineWrapping: true,
-        theme: opts.theme || "catdown"
+        theme: opts.theme || "catdown",
+        keyMap: "sublime"
     });
 
     // Create references to editor el and vertical-scroll el

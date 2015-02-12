@@ -15,7 +15,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "catdown-core": "^2.0.3",
+    "catdown-core": "^2.0.4",
     "codemirror": "^4.12.0",
     "marked": "^0.3.3"
   },
